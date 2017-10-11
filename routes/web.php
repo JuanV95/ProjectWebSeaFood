@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/productos','ProductosController@listaProductos');
+Route::get('/productos/{idProducto}','ProductosController@producto');
