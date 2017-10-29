@@ -3,6 +3,7 @@
 namespace SeaFood\Http\Controllers;
 
 use Illuminate\Http\Request;
+use SeaFood\Producto;
 
 class ProductosController extends Controller
 {
@@ -10,11 +11,13 @@ class ProductosController extends Controller
 
     public function listaProductos(){
 
-    	return view('productos.listaProductos');
+    	$Productos = Producto::all();
+
+    	return view('productos.listaProductos')->with(['Productos' => $Productos]);
     }
 
-    public function producto(){
+    public function producto(Producto $Producto){
 
-    	return view('productos.producto');
+    	return view('productos.producto')->with(['Producto' => $Producto]);
     }
 }

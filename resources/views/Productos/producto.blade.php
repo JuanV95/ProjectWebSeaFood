@@ -2,17 +2,15 @@
 
 @section('contenido')
 
-<div class="row">
+	<div class="row">
+				
+		<div class="col-md-12">
 			
-	<div class="col-md-12">
-		
-		<h2>Producto</h2>
-		<p>Datos del producto</p>
+			<h2>{{$Producto->nombre}}</h2>
+			<p>{{$Producto->descripcion}}</p>
+
+		</div>
 
 	</div>
-
-</div>
-
-<hr>
 
 @endsection

@@ -11,5 +11,6 @@
 |
 */
 
-Route::get('/productos','ProductosController@listaProductos');
-Route::get('/productos/{idProducto}','ProductosController@producto');
+Route::name('productos_path')->get('/productos','ProductosController@listaProductos');
+Route::name('producto_path')->get('/producto/{producto}','ProductosController@producto');
+Route::get('/login','loginController@login');

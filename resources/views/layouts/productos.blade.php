@@ -1,37 +1,30 @@
-<!DOCTYPE html>
-
-<html>
-
+<html = lang="es">
 <head>
 
-	<meta charset="UTF-8">
-
-	<title>Lista de productos</title>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="{{ asset('Imagenes/FrutosDelMar.ico') }}" rel="stylesheet">
+	<title>Frutos Del Mar</title>
+	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 </head>
-
 
 <body>
 
 	<div class="container">
-		
-		<div class="row">
-			
-			<div class="col-md-12">
-				
-				<h1>Productos disponibles</h1>
 
+		<div class="row"> 
+
+			<div class="col-md-12">
+
+				<h1>Lista de Productos</h1>
+				
 			</div>
 
 		</div>
 
-		<hr>
-
 		@yield('contenido')
-
+	
+	</div>
 </body>
+</html>
 
-</html> 
