@@ -8,7 +8,7 @@
 
 			<div class="col-md-12">
 
-				<h1>Lista de Productos</h1>
+				<h1>Editar producto</h1>
 				
 			</div>
 
@@ -16,11 +16,9 @@
 
 		<hr>
 
-		@yield('productos')
+		@include('layouts._formularioProducto', ['Producto' => $Producto])
 	
-	</div>
+	</div>		
+
 
 @endsection
-
-
-

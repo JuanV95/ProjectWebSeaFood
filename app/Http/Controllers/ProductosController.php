@@ -11,7 +11,7 @@ class ProductosController extends Controller
 
     public function listaProductos(){
 
-    	$Productos = Producto::all();
+    	$Productos = Producto::orderBy('id','desc')->paginate(10);
 
     	return view('productos.listaProductos')->with(['Productos' => $Productos]);
     }
